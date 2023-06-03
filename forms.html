@@ -7,11 +7,27 @@
   <body>
     <form class="form" action="text" method="POST">
       <h2>Sign in</h2>
-      <label for="email-form">Type your email</label>
-      <input type="text"placeholder="toNy_sh11@gmail.com" autofocus id="email-form" name="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"/>
-      <label for="password-form">Type your password</label>
-      <input type="password"placeholder="P48fghg5"id="password-form"name="password" />
-      <input type="date"placeholder="Birthday"/>
+      <label class="required" for="email-form">Type your email</label>
+      <input type="text" placeholder="toNy_sh11@gmail.com" autofocus id="email-form" name="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" required>
+      <label class="required">Type your password</label>
+      <input type="password" placeholder="P48fghg5" id="password-form"name="password" required>
+      <input type="date" placeholder="Birthday"/>
+      <!--required в радиокнопках задается на один из элементов-->
+      <label>
+        <input type="radio" value="Male" name="gender" required />Male
+      </label>
+      <label>
+        <input type="radio" value="Female" name="gender" />Female
+      </label>
+      <label>
+        <input type="radio" value="Nonbinari" name="gender" />Nonbinari
+      </label>
+      <label>
+        <input type="checkbox" name="Is-adult" name="gender" />Чи є вам 18 років?
+      </label>
+      <label>
+        <input type="checkbox" name="Is-adult" name="gender" />Чи погоджуєтеся Ви з політикою конфідеційності?
+      </label>
       <button type="submit">Sign in</button>
     </form>
   </body>
