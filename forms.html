@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="forms.css">
+  <head>
+    <link rel="stylesheet" href="forms.css" />
     <title>Document</title>
-</head>
-<body>
- <form class="form">
-    <h2>Sign in</h2>
-    <!--вариант 1 вложения input в label--> 
-    <label for="email-form">Type your email</label>
-    <input type="text" placeholder="Email" autofocus id="email-form">
-    <!--вариант 2 вложения input в label--> 
-    <label>Type your password
-        <input type="password" placeholder="Password">
-    </label>
-    
-    <button>Sign in</button>
- </form>   
-</body>
-</html> 
+  </head>
+  <body>
+    <form class="form" action="text" method="POST">
+      <h2>Sign in</h2>
+      <label for="email-form">Type your email</label>
+      <input type="text" placeholder="toNy_sh11@gmail.com"  autofocus id="email-form" name="email" />
+      <label for="password-form">Type your password</label>
+      <input type="password" placeholder="P48fghg5" id="password-form" name="password" />
+      <button type="submit">Sign in</button>
+    </form>
+  </body>
+</html>
