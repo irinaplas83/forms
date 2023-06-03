@@ -12,16 +12,37 @@
       <label class="required">Type your password</label>
       <input type="password" placeholder="P48fghg5" id="password-form"name="password" required>
       <input type="date" placeholder="Birthday"/>
+      <fieldset>
+        <legend>Choose your city</legend>
+        <select name="city">
+        <option value="Kyiv">Kyiv</option>
+        <option value="Dnipro">Dnipro</option>
+        <option value="Kharkiv">Kharkiv</option>
+        <optgroup label="Dnipropetrovsk region">
+            <option value="Krivoy Rog">Krivoy Rog</option>
+            <option value="Nikolaev">Nikolaev</option>
+            <option value="Other">Other</option>
+        </optgroup>
+    </select>
+      </fieldset>
+      <fieldset>
+        <legend>Choose your avatar</legend>
+        <input type="file">
+      </fieldset>
       <!--required в радиокнопках задается на один из элементов-->
-      <label>
-        <input type="radio" value="Male" name="gender" required />Male
-      </label>
-      <label>
-        <input type="radio" value="Female" name="gender" />Female
-      </label>
-      <label>
-        <input type="radio" value="Nonbinari" name="gender" />Nonbinari
-      </label>
+      <fieldset>
+        <legend>Information about your gender</legend>
+        <label>
+            <input type="radio" value="Male" name="gender" required />Male
+          </label>
+          <label>
+            <input type="radio" value="Female" name="gender" />Female
+          </label>
+          <label>
+            <input type="radio" value="Nonbinari" name="gender" />Nonbinari
+          </label>
+      </fieldset>
+      
       <label>
         <input type="checkbox" name="Is-adult" name="gender" />Чи є вам 18 років?
       </label>
