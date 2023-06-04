@@ -12,6 +12,8 @@ legend {
     content: "*";
     color: red;
 }
-
+textarea {
+    resize: none;
+}
 
 

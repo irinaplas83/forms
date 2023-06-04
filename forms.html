@@ -14,16 +14,12 @@
       <input type="date" placeholder="Birthday"/>
       <fieldset>
         <legend>Choose your city</legend>
-        <select name="city">
-        <option value="Kyiv">Kyiv</option>
-        <option value="Dnipro">Dnipro</option>
-        <option value="Kharkiv">Kharkiv</option>
-        <optgroup label="Dnipropetrovsk region">
-            <option value="Krivoy Rog">Krivoy Rog</option>
-            <option value="Nikolaev">Nikolaev</option>
-            <option value="Other">Other</option>
-        </optgroup>
-    </select>
+        <input type="text" name="city" list="cities">
+        <datalist id="cities">
+            <option value="Kyiv"></option>
+            <option value="Dnipro"></option>
+            <option value="Nikolaev"></option>
+        </datalist>
       </fieldset>
       <fieldset>
         <legend>Choose your avatar</legend>
@@ -49,6 +45,9 @@
       <label>
         <input type="checkbox" name="Is-adult" name="gender" />Чи погоджуєтеся Ви з політикою конфідеційності?
       </label>
+
+      
+      <textarea name="text"></textarea>
       <button type="submit">Sign in</button>
     </form>
   </body>
